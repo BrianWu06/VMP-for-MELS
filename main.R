@@ -1,6 +1,5 @@
 library(lme4)
 source("mels_ncvmp.R")
-source("fast_regls.R")
 
 ##################################
 ### Example 1. Riesby Data Set ###
@@ -19,17 +18,6 @@ summary(riesby_ncvmp)
 
 riesby_ncvmp_boot <- bootstrap_mels_ncvmp(riesby_ncvmp, B = 1000)
 summary(riesby_ncvmp_boot)
-
-# riesby_clean <- na.omit(riesby[, c("hamd", "week", "endog", "id", "endweek")])
-# riesby_y <- riesby_clean$hamd
-# riesby_x <- model.matrix(~ week + endog + endweek, data = riesby_clean)
-# riesby_z <- model.matrix(~ week + endog, data = riesby_clean)
-# riesby_id <- as.numeric(factor(riesby_clean$id))
-# riesby_fastregls <- fastregls(riesby_y, riesby_x, riesby_z, riesby_id, getSigmaSE = FALSE)
-# riesby_fastregls$beta
-# riesby_fastregls$tau
-# riesby_fastregls$sigma_sq_nu
-# riesby_fastregls$sigma_sq_omega
 
 ###########################################
 ### Example 1. Health Behavior Data Set ###
@@ -59,3 +47,4 @@ posmod_ncvmp <- mels_ncvmp(y = "posmood",
                            id = "id", 
                            data = posmod)
 summary(posmod_ncvmp)
+
