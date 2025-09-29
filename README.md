@@ -11,7 +11,7 @@ $\omega_i = \mathcal{N}(0, \sigma^2_{\omega})$
 riesby_ncvmp takes the following inputs: 
 1. y: a string that indicates the name of the response variable.
 2. beta_formula: the mean model formula.
-3. alpha_formula: the BS variance model formula.
+3. alpha_formula: the BS variance model formula, this can only allow for non-time varying variable for precise parameter estimation.
 4. tau_formula: the WS variance model formula.
 5. id: a string of the id variable's name.
 6. r: whether to estimate the parameter r.
