@@ -4,8 +4,8 @@ This repo is an implementation of a Non-Conjugate Variational Message Passing al
 
 The MELS model is as follow:    
 $y_{ij} = X_{ij}^\top \beta + \nu_i + \epsilon_{ij}$    
-$\nu_i = \mathcal{N}(0, \exp{u_i^\top \alpha})$    
-$\epsilon_{ij} = \mathcal{N}(0, \exp{w_{ij}^\top \tau} + \omega_i)$    
+$\nu_i = \mathcal{N}(0, \exp{(u_i^\top \alpha)})$    
+$\epsilon_{ij} = \mathcal{N}(0, \exp{(w_{ij}^\top \tau)} + \omega_i)$    
 $\omega_i = \mathcal{N}(0, \sigma^2_{\omega})$    
 
 riesby_ncvmp takes the following inputs: 
