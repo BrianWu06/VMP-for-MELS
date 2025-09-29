@@ -1,6 +1,6 @@
 # NCVMP for MELS
 
-This repo is an implementation of a Non-Conjugate Variational Message Passing algorithm for the Mixed-Effect Locayion-Scale Model. 
+This repo is an implementation of a Non-Conjugate Variational Message Passing algorithm for the Mixed-Effect Location-Scale Model. 
 
 The MELS model is as follow:    
 $y_{ij} = X_{ij}^\top \beta + \nu_i + \epsilon_{ij}$    
