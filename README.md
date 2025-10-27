@@ -17,7 +17,7 @@ riesby_ncvmp takes the following inputs:
 6. data: a dataframe of the data set to be processed.
 7. max_iter: the maximum number of iterations.
 8. tol: the convergence criterion.
-9. beta_prior, alpha_prior, tau_prior, A_prior, r_prior: the priors for beta, alpha, tau, A and r respectively.
+9. beta_prior, alpha_prior, tau_prior, A_prior: the priors for beta, alpha, tau and A espectively.
 10. verbose: whether to print additional information or not.
 
 ```
