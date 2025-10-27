@@ -8,7 +8,7 @@ $\nu_i = \mathcal{N}(0, \exp{(u_i^\top \alpha)})$
 $\epsilon_{ij} = \mathcal{N}(0, \exp{(w_{ij}^\top \tau + \omega_i)})$    
 $\omega_i = \mathcal{N}(0, \sigma^2_{\omega})$    
 
-riesby_ncvmp takes the following inputs: 
+The mels_ncvmp takes the following input variables: 
 1. y: a string that indicates the name of the response variable.
 2. beta_formula: the mean model formula.
 3. alpha_formula: the BS variance model formula, this can only allow for non-time varying variable for precise parameter estimation.
